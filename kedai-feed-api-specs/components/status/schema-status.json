@@ -1,0 +1,184 @@
+{
+    "paginate": {
+        "type": "object",
+        "properties": {
+            "data": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "user": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string"
+                                },
+                                "kdcw_position": {
+                                    "type": "string"
+                                },
+                                "profil_picture": {
+                                    "type": "string"
+                                }                    
+                            }
+                        },
+                        "id_status": {
+                            "type": "string"
+                        },
+                        "id_post": {
+                            "type": "string"
+                        },
+                        "status": {
+                            "type": "string"
+                        },
+                        "like": {
+                            "type": "number",
+                            "format": "int32",
+                            "default": 0
+                        },
+                        "media": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string"
+                                },
+                                "file": {
+                                    "type": "string"
+                                }
+                            },
+                            "nullable": true
+                        },
+                        "created_at": {
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        "updated_at": {
+                            "type": "string",
+                            "format": "date-time"
+                        }
+                    }
+                }
+            },
+            "links": {
+                "type": "object",
+                "properties": {
+                    "first": {
+                        "type": "string"
+                    }   ,
+                    "last": {
+                        "type": "string"
+                    } ,  
+                    "prev": {
+                    "type": "string"
+                    },
+                    "next": {
+                        "type": "string"
+                    }   
+                }
+            },
+            "meta": {
+                "type": "object",
+                "properties": {
+                    "current_page": {
+                        "type": "number"
+                    },
+                    "from": {
+                        "type": "number"
+                    },   
+                    "last_page": {
+                        "type": "number"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "url": {
+                                    "type": "string"
+                                },
+                                "label": {
+                                    "type": "string"
+                                },
+                                "active": {
+                                    "type": "boolean"
+                                }
+                            }
+                        }
+                    },
+                    "path": {
+                        "type": "string"
+                    },
+                    "per_page": {
+                        "type": "number"
+                    },
+                    "to": {
+                        "type": "number"
+                    },
+                    "total": {
+                        "type": "number"
+                    }
+                }
+            }
+        }
+    },
+    "createStatus": {
+        "type": "object",
+        "properties": {
+            "user_id": {
+                "type": "number",
+                "format": "int64"
+            },
+            "status": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2300
+            },
+            "media": {
+                "type": "array",
+                "items": {
+                    "type": "string",
+                    "format": "binary"
+                },
+                "maxItems": 10,
+                "nullable": true
+            }
+        },
+        "required": ["user_id", "status"]
+    },
+    "updateStatus": {
+        "type": "object",
+        "properties": {
+            "user_id": {
+                "type": "number",
+                "format": "int64"
+            },
+            "status": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2300
+            },
+            "media": {
+                "type": "array",
+                "items": {
+                    "type": "string",
+                    "format": "binary"
+                },
+                "maxItems": 10,
+                "nullable": true
+            },
+            "delete_media": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "file": {
+                            "type": "string",
+                            "minLength": 1
+                        }
+                    }
+                },
+                "nullable": true
+            }
+        },
+        "required": ["user_id", "status", "media"]
+    }
+}

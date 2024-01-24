@@ -1,0 +1,45 @@
+{
+    "example response get 1": {
+        "description": "Example for comment 1",
+        "value": {
+            "data": [
+                {
+                    "id_comment": 1,
+                    "id_post": 1,
+                    "comment": "Halo guys kembali lagi dengan Eky disini"
+                }
+            ]
+        }
+    },
+    "example response get 2": {
+        "description": "Example for comment 2",
+        "value": {
+            "data": [
+                {
+                    "id_comment": 2,
+                    "id_post": 1,
+                    "comment": "Halo guys kembali lagi dengan Dick disini"
+                },
+                {
+                    "id_comment": 3,
+                    "id_post": 1,
+                    "comment": "Halo guys kembali lagi dengan Dare disini"
+                }
+            ]
+        }
+    },
+    "example-create-comment-1": {
+        "description": "Example comment 1",
+        "value": {
+            "id_post": 1,
+            "comment": "Hai juga eki"
+        }
+    },
+    "example-create-comment-2": {
+        "description": "Example comment 2",
+        "value": {
+            "id_post": 1,
+            "comment": "Hai juga Dicky"
+        }
+    }
+}

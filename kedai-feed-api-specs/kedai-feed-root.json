@@ -1,0 +1,617 @@
+{
+    "openapi":"3.0.3",
+    "info": {
+      "title":"KeDai Computerworks feed APP RESTful API",
+      "version":"1.0",
+      "description": "OpenAPI specs for kedai-feed app",
+      "contact": {
+        "name": "KeDai Computerworks",
+        "email": "ketawadamai@gmail.com",
+        "url": "https://www.kedai.or.id"
+    },
+      "license": {
+        "name": "APACHE 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0"
+      }
+    },
+    
+    "servers": [
+        {
+            "description": "kedai-feed API server",
+            "url":"http://{environment}/",
+            "variables": {
+                "environment": {
+                    "description": "Server environment",
+                    "default": "localhost:8000",
+                    "enum": [
+                        "localhost:8000",
+                        "coming soon",
+                        "coming soon"
+                    ]
+                }
+            }
+        }
+    ],
+
+
+
+
+    "paths": {
+        "/status/": {
+            "get": {
+                "security": [
+                    {
+                        "apiKey": []
+                    }
+                ],
+                "tags": ["status"],
+                "summary": "Get all status for feed",
+                "description": "Get all status for feed using pagination",
+                "parameters": [
+                    {
+                        "name": "id_user",
+                        "in": "query",
+                        "required": false,
+                        "description": "to see all status from specific user",
+                        "schema": {
+                            "type": "number",
+                            "format": "int64",
+                            "nullable": false
+                        },
+                        "examples": {
+                            "Ricky": {
+                                "description": "Id example for user Ricky",
+                                "value": "1"
+                            },
+                            "Eki": {
+                                "description": "Id example for user Eki",
+                                "value": "2"
+                            }
+                        }
+                    },
+                    {
+                        "name": "id_status",
+                        "in": "query",
+                        "required": false,
+                        "description": "to see specific status",
+                        "schema": {
+                            "type": "number",
+                            "format": "int64",
+                            "nullable": false
+                        },
+                        "examples": {
+                            "Stataus 1": {
+                                "description": "Id example for user Status 1",
+                                "value": "1"
+                            },
+                            "Status 2": {
+                                "description": "Id example for user Status 2",
+                                "value": "100"
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success get status",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/schema-status-paginate"
+                                },
+                                "examples": {
+                                    "example 1": {
+                                        "$ref": "#/components/examples/example-status-response-200-1"
+                                    },
+                                    "example 2": {
+                                        "$ref": "#/components/examples/example-status-response-200-2"
+                                        
+                                    },
+                                    "example 3": {
+                                        "$ref": "#/components/examples/example-status-response-200-3"
+                                        
+                                    }
+                                }
+                            }   
+                        }
+                    },
+                    "500": {
+                        "description": "Server Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/schema-response"
+                                },
+                                "examples": {
+                                    "example error 1": {
+                                        "$ref": "#/components/examples/example-response-500-1"
+                                    },
+                                    "example error 2": {
+                                        "$ref": "#/components/examples/example-response-500-2"
+                                    }
+                                }
+                            }   
+                        }
+                    }
+                }
+            },
+            "post": {
+                "security": [
+                    {
+                        "apiKey": []
+                    }
+                ],
+                "tags": ["status"], 
+                "summary": "Create status",
+                "description": "Create status from user",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "multipart/form-data:": {
+                            "schema": {
+                                "$ref": "#/components/schemas/schema-create-status"
+                            },
+                            "examples": {
+                                "status 1": {
+                                    "description": "Example status 1",
+                                    "value": {
+                                        "user_id": 1,
+                                        "status": "Adakah guys?"
+                                    }
+                                },
+                                "status 2": {
+                                    "description": "Example status 2",
+                                    "value": {
+                                        "user_id": 2,
+                                        "status": "Kita lagi ada disini guys",
+                                        "media": ["image1.jpg", "image1.jpg", "image1.jpg"]
+                                    }
+                                }
+                            }
+                        } 
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Success create status",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/schema-response"
+                                },
+                                "example": {
+                                    "description": "Status created successfully",
+                                    "value": {
+                                        "status": "success",
+                                        "message": {
+                                            "message": "status created successfully"
+                                        }
+                                    }   
+                                } 
+                            }   
+                        }
+                    },
+                    "500": {
+                        "description": "Server Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/schema-response"
+                                },
+                                "examples": {
+                                    "example error 1": {
+                                        "$ref": "#/components/examples/example-response-500-1"
+                                    },
+                                    "example error 2": {
+                                        "$ref": "#/components/examples/example-response-500-2"
+                                    }
+                                }
+                            }   
+                        }
+                    }
+                }
+            }
+        },
+        "/status/{statusId}": {
+            "put": {
+                "security": [
+                    {
+                        "apiKey": []
+                    }
+                ],
+                "tags": ["status"], 
+                "summary": "Update status",
+                "description": "Update status from user",
+                "parameters": [
+                    {
+                        "name": "statusId",
+                        "in": "path",
+                        "required": true,
+                        "description": "Status Id for update",
+                        "schema": {
+                            "type": "string",
+                            "minLength": 1
+                        },
+                        "example": 1
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "multipart/form-data:": {
+                            "schema": {
+                                "$ref": "#/components/schemas/schema-update-status"
+                            }
+                        }   
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success updated status",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/schema-response"
+                                },
+                                "example": {
+                                    "description": "Status updated successfully",
+                                    "value": {
+                                        "status": "success",
+                                        "message": {
+                                            "message": "status updated successfully"
+                                        }
+                                    }   
+                                } 
+                            }   
+                        }
+                    },
+                    "500": {
+                        "description": "Server Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/schema-response"
+                                },
+                                "examples": {
+                                    "example error 1": {
+                                        "$ref": "#/components/examples/example-response-500-1"
+                                    },
+                                    "example error 2": {
+                                        "$ref": "#/components/examples/example-response-500-2"
+                                    }
+                                }
+                            }   
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "security": [
+                    {
+                        "apiKey": []
+                    }
+                ],
+                "tags": ["status"], 
+                "summary": "Delete status",
+                "description": "Delete status from user",
+                "parameters": [
+                    {
+                        "name": "statusId",
+                        "in": "path",
+                        "required": true,
+                        "description": "Status Id for delete",
+                        "schema": {
+                            "type": "string",
+                            "minLength": 1
+                        },
+                        "example": 1
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success deleted status",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/schema-response"
+                                },
+                                "example": {
+                                    "description": "Status deleted successfully",
+                                    "value": {
+                                        "status": "success",
+                                        "message": {
+                                            "message": "status deleted successfully"
+                                        }
+                                    }   
+                                } 
+                            }   
+                        }
+                    },
+                    "500": {
+                        "description": "Server Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/schema-response"
+                                },
+                                "examples": {
+                                    "example error 1": {
+                                        "$ref": "#/components/examples/example-response-500-1"
+                                    },
+                                    "example error 2": {
+                                        "$ref": "#/components/examples/example-response-500-2"
+                                    }
+                                }
+                            }   
+                        }
+                    }   
+                }
+            }
+        },
+        "/comment": {
+            "get": {
+                "security": [
+                    {
+                        "apiKey": []
+                    }
+                ],
+                "tags": ["status", "comment"],
+                "summary": "Get all comment for feed",
+                "description": "Get all comment for feed",
+                "parameters": [
+                    {
+                        "name": "id_post",
+                        "in": "query",
+                        "required": true,
+                        "description": "id to status, event , or job offer",
+                        "schema": {
+                            "type": "number",
+                            "format": "int64",
+                            "nullable": false
+                        },
+                        "example": 1 
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success get all comment for specific feed",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/schema-comment"
+                                },
+                                "examples": {
+                                    "Example comment 1": {
+                                        "$ref": "#/components/examples/example-comment-response-200-1"
+                                    },   
+                                    "Example comment 2": {
+                                        "$ref": "#/components/examples/example-comment-response-200-2"
+                                    }   
+                                }
+                            }   
+                        }
+                    },
+                    "500": {
+                        "description": "Server Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/schema-response"
+                                },
+                                "examples": {
+                                    "example error 1": {
+                                        "$ref": "#/components/examples/example-response-500-1"
+                                    },
+                                    "example error 2": {
+                                        "$ref": "#/components/examples/example-response-500-2"
+                                    }
+                                }
+                            }   
+                        }
+                    }
+                }
+            },
+            "post": {
+                "security": [
+                    {
+                        "apiKey": []
+                    }
+                ],
+                "tags": ["status", "comment"],
+                "summary": "Create comment from user",
+                "description": "Get all comment from user",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/schema-create-comment"
+                            },
+                            "examples": {
+                                "Example comment 1": {
+                                    "$ref": "#/components/examples/example-create-comment-1"
+                                },
+                                "Example comment 2": {
+                                    "$ref": "#/components/examples/example-create-comment-2"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success create status",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/schema-response"
+                                },
+                                "example": {
+                                    "description": "Status create successfully",
+                                    "value": {
+                                        "status": "success",
+                                        "message": {
+                                            "message": "status create successfully"
+                                        }
+                                    }   
+                                } 
+                            }   
+                        }
+                    },
+                    "500": {
+                        "description": "Server Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/schema-response"
+                                },
+                                "examples": {
+                                    "example error 1": {
+                                        "$ref": "#/components/examples/example-response-500-1"
+                                    },
+                                    "example error 2": {
+                                        "$ref": "#/components/examples/example-response-500-2"
+                                    }
+                                }
+                            }   
+                        }
+                    }
+                }
+            }
+        },
+        "/notification/": {
+            "get": {
+                "security": [
+                    {
+                        "apiKey": []
+                    }
+                ],
+                "tags": ["notification"],
+                "summary": "Get notification for user",
+                "description": "Get notification for user",
+                "parameters": [
+                    {
+                        "name": "id_user",
+                        "in": "query",
+                        "required": true,
+                        "description": "to see notification from specific user",
+                        "schema": {
+                            "type": "number",
+                            "format": "int64",
+                            "nullable": false
+                        },
+                        "examples": {
+                            "Ricky": {
+                                "description": "Id example for user Ricky",
+                                "value": "1"
+                            },
+                            "Eki": {
+                                "description": "Id example for user Eki",
+                                "value": "2"
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success get status",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/schema-status-paginate"
+                                },
+                                "examples": {
+                                    "example 1": {
+                                        "$ref": "#/components/examples/example-status-response-200-1"
+                                    },
+                                    "example 2": {
+                                        "$ref": "#/components/examples/example-status-response-200-2"
+                                        
+                                    }
+                                }
+                            }   
+                        }
+                    },
+                    "500": {
+                        "description": "Server Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/schema-response"
+                                },
+                                "examples": {
+                                    "example error 1": {
+                                        "$ref": "#/components/examples/example-response-500-1"
+                                    },
+                                    "example error 2": {
+                                        "$ref": "#/components/examples/example-response-500-2"
+                                    }
+                                }
+                            }   
+                        }
+                    }
+                }
+            }
+        }
+    },
+
+
+
+
+    "components": {
+        "securitySchemes": {
+            "apiKey": {
+                "$ref": "components/security.json#/apiKey"
+            }
+        },
+        "schemas": {
+            "schema-status-paginate": {
+                "$ref": "components/status/schema-status.json#/paginate"
+            },   
+            "schema-response": {
+                "$ref": "components/response/schema-response-standard.json#"
+            },
+            "schema-create-status": {
+                "$ref": "components/status/schema-status.json#/createStatus"
+            },
+            "schema-update-status": {
+                "$ref": "components/status/schema-status.json#/updateStatus"
+            },
+            "schema-comment": {
+                "$ref": "components/comment/schema-comment.json#/schema-comment"
+            },
+            "schema-create-comment": {
+                "$ref": "components/comment/schema-comment.json#/schema-create-comment"
+            }
+        },
+        "examples": {
+            "example-status-response-200-1": {
+                "$ref": "components/status/example-status.json#/example-status/example 1"
+            },
+            "example-status-response-200-2": {
+                "$ref": "components/status/example-status.json#/example-status/example 2"
+            },
+            "example-status-response-200-3": {
+                "$ref": "components/status/example-status.json#/example-status/example 3"
+            },
+            "example-response-500-1": {
+                "$ref": "components/status/example-status.json#/example-status/example error 1"
+            },
+            "example-response-500-2": {
+                "$ref": "components/status/example-status.json#/example-status/example error 2"
+            },
+            "example-comment-response-200-1": {
+                "$ref": "components/comment/example-comment.json#/example response get 1"
+            },
+            "example-comment-response-200-2": {
+                "$ref": "components/comment/example-comment.json#/example response get 2"
+            },
+            "example-create-comment-1": {
+                "$ref": "components/comment/example-comment.json#/example-create-comment-1"
+            },
+            "example-create-comment-2": {
+                "$ref": "components/comment/example-comment.json#/example-create-comment-2"
+            }
+        }
+    }
+}

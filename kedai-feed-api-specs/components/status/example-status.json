@@ -1,0 +1,496 @@
+{
+    "example-status": {
+        "example 1": {
+            "description": "Success get status for feed",
+            "value": {
+                "data": [
+                    {
+                        "user": {
+                            "name": "Ricky Heri Sappa",
+                            "kdcw_position": "Staff Divisi Program",
+                            "profile_picture": "https://feed.kedai.or.id/storage/media/rickyherisappa.jpg"
+                        },
+                        "id_status": 1,
+                        "id_post": 1,
+                        "status": "Hai guys welcome to kedai feed",
+                        "like": 80,
+                        "media": {
+                            "name": "hai",
+                            "file": "https://feed.kedai.or.id/storage/media/hai.jpg"
+                        },
+                        "created_at": "2017-07-21T17:32:28Z",
+                        "updated_at": "2017-07-21T17:32:28Z"
+                    },
+                    {
+                        "user": {
+                            "name": "Ricky Heri Sappa",
+                            "kdcw_position": "Staff Divisi Program",
+                            "profile_picture": "https://feed.kedai.or.id/storage/media/rickyherisappa.jpg"
+                        },
+                        "id_status": 1,
+                        "id_post": 1,
+                        "status": "Hai guys welcome to kedai feed",
+                        "like": 80,
+                        "media": {
+                            "name": "hai",
+                            "file": "https://feed.kedai.or.id/storage/media/hai.jpg"
+                        },
+                        "created_at": "2017-07-21T17:32:28Z",
+                        "updated_at": "2017-07-21T17:32:28Z"
+                    },
+                    {
+                        "user": {
+                            "name": "Ricky Heri Sappa",
+                            "kdcw_position": "Staff Divisi Program",
+                            "profile_picture": "https://feed.kedai.or.id/storage/media/rickyherisappa.jpg"
+                        },
+                        "id_status": 1,
+                        "id_post": 1,
+                        "status": "Hai guys welcome to kedai feed",
+                        "like": 80,
+                        "media": {
+                            "name": "hai",
+                            "file": "https://feed.kedai.or.id/storage/media/hai.jpg"
+                        },
+                        "created_at": "2017-07-21T17:32:28Z",
+                        "updated_at": "2017-07-21T17:32:28Z"
+                    },
+                    {
+                        "user": {
+                            "name": "Ricky Heri Sappa",
+                            "kdcw_position": "Staff Divisi Program",
+                            "profile_picture": "https://feed.kedai.or.id/storage/media/rickyherisappa.jpg"
+                        },
+                        "id_status": 1,
+                        "id_post": 1,
+                        "status": "Hai guys welcome to kedai feed",
+                        "like": 80,
+                        "media": {
+                            "name": "hai",
+                            "file": "https://feed.kedai.or.id/storage/media/hai.jpg"
+                        },
+                        "created_at": "2017-07-21T17:32:28Z",
+                        "updated_at": "2017-07-21T17:32:28Z"
+                    },
+                    {
+                        "user": {
+                            "name": "Ricky Heri Sappa",
+                            "kdcw_position": "Staff Divisi Program",
+                            "profile_picture": "https://feed.kedai.or.id/storage/media/rickyherisappa.jpg"
+                        },
+                        "id_status": 1,
+                        "id_post": 1,
+                        "status": "Hai guys welcome to kedai feed",
+                        "like": 80,
+                        "media": {
+                            "name": "hai",
+                            "file": "https://feed.kedai.or.id/storage/media/hai.jpg"
+                        },
+                        "created_at": "2017-07-21T17:32:28Z",
+                        "updated_at": "2017-07-21T17:32:28Z"
+                    },
+                    {
+                        "user": {
+                            "name": "Ricky Heri Sappa",
+                            "kdcw_position": "Staff Divisi Program",
+                            "profile_picture": "https://feed.kedai.or.id/storage/media/rickyherisappa.jpg"
+                        },
+                        "id_status": 1,
+                        "id_post": 1,
+                        "status": "Hai guys welcome to kedai feed",
+                        "like": 80,
+                        "media": {
+                            "name": "hai",
+                            "file": "https://feed.kedai.or.id/storage/media/hai.jpg"
+                        },
+                        "created_at": "2017-07-21T17:32:28Z",
+                        "updated_at": "2017-07-21T17:32:28Z"
+                    },
+                    {
+                        "user": {
+                            "name": "Ricky Heri Sappa",
+                            "kdcw_position": "Staff Divisi Program",
+                            "profile_picture": "https://feed.kedai.or.id/storage/media/rickyherisappa.jpg"
+                        },
+                        "id_status": 1,
+                        "id_post": 1,
+                        "status": "Hai guys welcome to kedai feed",
+                        "like": 80,
+                        "media": {
+                            "name": "hai",
+                            "file": "https://feed.kedai.or.id/storage/media/hai.jpg"
+                        },
+                        "created_at": "2017-07-21T17:32:28Z",
+                        "updated_at": "2017-07-21T17:32:28Z"
+                    },
+                    {
+                        "user": {
+                            "name": "Ricky Heri Sappa",
+                            "kdcw_position": "Staff Divisi Program",
+                            "profile_picture": "https://feed.kedai.or.id/storage/media/rickyherisappa.jpg"
+                        },
+                        "id_status": 1,
+                        "id_post": 1,
+                        "status": "Hai guys welcome to kedai feed",
+                        "like": 80,
+                        "media": {
+                            "name": "hai",
+                            "file": "https://feed.kedai.or.id/storage/media/hai.jpg"
+                        },
+                        "created_at": "2017-07-21T17:32:28Z",
+                        "updated_at": "2017-07-21T17:32:28Z"
+                    },
+                    {
+                        "user": {
+                            "name": "Ricky Heri Sappa",
+                            "kdcw_position": "Staff Divisi Program",
+                            "profile_picture": "https://feed.kedai.or.id/storage/media/rickyherisappa.jpg"
+                        },
+                        "id_status": 1,
+                        "id_post": 1,
+                        "status": "Hai guys welcome to kedai feed",
+                        "like": 80,
+                        "media": {
+                            "name": "hai",
+                            "file": "https://feed.kedai.or.id/storage/media/hai.jpg"
+                        },
+                        "created_at": "2017-07-21T17:32:28Z",
+                        "updated_at": "2017-07-21T17:32:28Z"
+                    },
+                    {
+                        "user": {
+                            "name": "Ricky Heri Sappa",
+                            "kdcw_position": "Staff Divisi Program",
+                            "profile_picture": "https://feed.kedai.or.id/storage/media/rickyherisappa.jpg"
+                        },
+                        "id_status": 1,
+                        "id_post": 1,
+                        "status": "Hai guys welcome to kedai feed",
+                        "like": 80,
+                        "media": {
+                            "name": "hai",
+                            "file": "https://feed.kedai.or.id/storage/media/hai.jpg"
+                        },
+                        "created_at": "2017-07-21T17:32:28Z",
+                        "updated_at": "2017-07-21T17:32:28Z"
+                    },
+                    {
+                        "user": {
+                            "name": "Ricky Heri Sappa",
+                            "kdcw_position": "Staff Divisi Program",
+                            "profile_picture": "https://feed.kedai.or.id/storage/media/rickyherisappa.jpg"
+                        },
+                        "id_status": 1,
+                        "id_post": 1,
+                        "status": "Hai guys welcome to kedai feed",
+                        "like": 80,
+                        "media": {
+                            "name": "hai",
+                            "file": "https://feed.kedai.or.id/storage/media/hai.jpg"
+                        },
+                        "created_at": "2017-07-21T17:32:28Z",
+                        "updated_at": "2017-07-21T17:32:28Z"
+                    }
+                ],
+                "links": {
+                    "first": "https://feed.kedai.or.id?page=1",
+                    "last": "https://feed.kedai.or.id?page=10",
+                    "prev": null,
+                    "next": "https://feed.kedai.or.id?page=2"
+                },
+                "meta": {
+                    "current_page": 1,
+                    "from": 1,
+                    "last_page": 10,
+                    "links": [
+                        {
+                            "url": null,
+                            "label": "&laquo; Previous",
+                            "active": false
+                        },
+                        {
+                            "url": "https://feed.kedai.or.id?page=1",
+                            "label": "1",
+                            "active": true
+                        },
+                        {
+                            "url": "https://feed.kedai.or.id?page=2",
+                            "label": "2",
+                            "active": false
+                        },
+                        {
+                            "url": "https://feed.kedai.or.id?page=3",
+                            "label": "3",
+                            "active": false
+                        },
+                        {
+                            "url": "https://feed.kedai.or.id?page=2",
+                            "label": "Next &raquo;",
+                            "active": false
+                        }
+                    ],
+                    "path": "https://feed.kedai.or.id",
+                    "per_page": 10,
+                    "to": 1,
+                    "total": 100
+                }
+            }
+        },
+        "example 2": {
+            "description": "Success get status for feed",
+            "value": {
+                "data": [
+                    {
+                        "user": {
+                            "name": "Ricky Heri Sappa",
+                            "kdcw_position": "Staff Divisi Program",
+                            "profile_picture": "https://feed.kedai.or.id/storage/media/rickyherisappa.jpg"
+                        },
+                        "id_status": 2,
+                        "id_post": 2,
+                        "status": "Hai guys welcome to kedai feed aku Eki",
+                        "like": 24,
+                        "media": {
+                            "name": "Eki1",
+                            "file": "https://feed.kedai.or.id/storage/media/eki1.jpg"
+                        }
+                    },
+                    {
+                        "user": {
+                            "name": "Ricky Heri Sappa",
+                            "kdcw_position": "Staff Divisi Program",
+                            "profile_picture": "https://feed.kedai.or.id/storage/media/rickyherisappa.jpg"
+                        },
+                        "id_status": 2,
+                        "id_post": 2,
+                        "status": "Hai guys welcome to kedai feed aku Eki",
+                        "like": 24,
+                        "media": {
+                            "name": "Eki1",
+                            "file": "https://feed.kedai.or.id/storage/media/eki1.jpg"
+                        }
+                    },
+                    {
+                        "user": {
+                            "name": "Ricky Heri Sappa",
+                            "kdcw_position": "Staff Divisi Program",
+                            "profile_picture": "https://feed.kedai.or.id/storage/media/rickyherisappa.jpg"
+                        },
+                        "id_status": 2,
+                        "id_post": 2,
+                        "status": "Hai guys welcome to kedai feed aku Eki",
+                        "like": 24,
+                        "media": {
+                            "name": "Eki1",
+                            "file": "https://feed.kedai.or.id/storage/media/eki1.jpg"
+                        }
+                    },
+                    {
+                        "user": {
+                            "name": "Ricky Heri Sappa",
+                            "kdcw_position": "Staff Divisi Program",
+                            "profile_picture": "https://feed.kedai.or.id/storage/media/rickyherisappa.jpg"
+                        },
+                        "id_status": 2,
+                        "id_post": 2,
+                        "status": "Hai guys welcome to kedai feed aku Eki",
+                        "like": 24,
+                        "media": {
+                            "name": "Eki1",
+                            "file": "https://feed.kedai.or.id/storage/media/eki1.jpg"
+                        }
+                    },
+                    {
+                        "user": {
+                            "name": "Ricky Heri Sappa",
+                            "kdcw_position": "Staff Divisi Program",
+                            "profile_picture": "https://feed.kedai.or.id/storage/media/rickyherisappa.jpg"
+                        },
+                        "id_status": 2,
+                        "id_post": 2,
+                        "status": "Hai guys welcome to kedai feed aku Eki",
+                        "like": 24,
+                        "media": {
+                            "name": "Eki1",
+                            "file": "https://feed.kedai.or.id/storage/media/eki1.jpg"
+                        }
+                    },
+                    {
+                        "user": {
+                            "name": "Ricky Heri Sappa",
+                            "kdcw_position": "Staff Divisi Program",
+                            "profile_picture": "https://feed.kedai.or.id/storage/media/rickyherisappa.jpg"
+                        },
+                        "id_status": 2,
+                        "id_post": 2,
+                        "status": "Hai guys welcome to kedai feed aku Eki",
+                        "like": 24,
+                        "media": {
+                            "name": "Eki1",
+                            "file": "https://feed.kedai.or.id/storage/media/eki1.jpg"
+                        }
+                    },
+                    {
+                        "user": {
+                            "name": "Ricky Heri Sappa",
+                            "kdcw_position": "Staff Divisi Program",
+                            "profile_picture": "https://feed.kedai.or.id/storage/media/rickyherisappa.jpg"
+                        },
+                        "id_status": 2,
+                        "id_post": 2,
+                        "status": "Hai guys welcome to kedai feed aku Eki",
+                        "like": 24,
+                        "media": {
+                            "name": "Eki1",
+                            "file": "https://feed.kedai.or.id/storage/media/eki1.jpg"
+                        }
+                    },
+                    {
+                        "user": {
+                            "name": "Ricky Heri Sappa",
+                            "kdcw_position": "Staff Divisi Program",
+                            "profile_picture": "https://feed.kedai.or.id/storage/media/rickyherisappa.jpg"
+                        },
+                        "id_status": 2,
+                        "id_post": 2,
+                        "status": "Hai guys welcome to kedai feed aku Eki",
+                        "like": 24,
+                        "media": {
+                            "name": "Eki1",
+                            "file": "https://feed.kedai.or.id/storage/media/eki1.jpg"
+                        }
+                    },
+                    {
+                        "user": {
+                            "name": "Ricky Heri Sappa",
+                            "kdcw_position": "Staff Divisi Program",
+                            "profile_picture": "https://feed.kedai.or.id/storage/media/rickyherisappa.jpg"
+                        },
+                        "id_status": 2,
+                        "id_post": 2,
+                        "status": "Hai guys welcome to kedai feed aku Eki",
+                        "like": 24,
+                        "media": {
+                            "name": "Eki1",
+                            "file": "https://feed.kedai.or.id/storage/media/eki1.jpg"
+                        }
+                    },
+                    {
+                        "user": {
+                            "name": "Ricky Heri Sappa",
+                            "kdcw_position": "Staff Divisi Program",
+                            "profile_picture": "https://feed.kedai.or.id/storage/media/rickyherisappa.jpg"
+                        },
+                        "id_status": 2,
+                        "id_post": 2,
+                        "status": "Hai guys welcome to kedai feed aku Eki",
+                        "like": 24,
+                        "media": {
+                            "name": "Eki1",
+                            "file": "https://feed.kedai.or.id/storage/media/eki1.jpg"
+                        }
+                    }
+                ],
+                "links": {
+                    "first": "https://feed.kedai.or.id?page=1",
+                    "last": "https://feed.kedai.or.id?page=10",
+                    "prev": "https://feed.kedai.or.id?page=1",
+                    "next": "https://feed.kedai.or.id?page=3"
+                },
+                "meta": {
+                    "current_page": 2,
+                    "from": 2,
+                    "last_page": 10,
+                    "links": [
+                        {
+                            "url": "https://feed.kedai.or.id?page=1",
+                            "label": "&laquo; Previous",
+                            "active": false
+                        },
+                        {
+                            "url": "https://feed.kedai.or.id?page=1",
+                            "label": "1",
+                            "active": false
+                        },
+                        {
+                            "url": "https://feed.kedai.or.id?page=2",
+                            "label": "2",
+                            "active": true
+                        },
+                        {
+                            "url": "https://feed.kedai.or.id?page=3",
+                            "label": "3",
+                            "active": false
+                        },
+                        {
+                            "url": "https://feed.kedai.or.id?page=3",
+                            "label": "Next &raquo;",
+                            "active": false
+                        }
+                    ],
+                    "path": "https://feed.kedai.or.id",
+                    "per_page": 10,
+                    "to": 2,
+                    "total": 100
+                }
+            }
+        },
+        "example 3": {
+            "description": "Success get status for feed with no data",
+            "value": {
+                "data": [],
+                "links": {
+                    "first": "https://feed.kedai.or.id?page=1",
+                    "last": "https://feed.kedai.or.id?page=1",
+                    "prev": null,
+                    "next": null
+                },
+                "meta": {
+                    "current_page": 1,
+                    "from": 1,
+                    "last_page": 1,
+                    "links": [
+                        {
+                            "url": "https://feed.kedai.or.id?page=1",
+                            "label": "&laquo; Previous",
+                            "active": false
+                        },
+                        {
+                            "url": "https://feed.kedai.or.id?page=1",
+                            "label": "1",
+                            "active": true
+                        },
+                        {
+                            "url": null,
+                            "label": "Next &raquo;",
+                            "active": false
+                        }
+                    ],
+                    "path": "https://feed.kedai.or.id",
+                    "per_page": 1,
+                    "to": 1,
+                    "total": 1
+                }
+            }
+        },
+        "example error 1": {
+            "description": "Server error example 1",
+            "value": {
+                "status": "server error",
+                "message": {
+                    "error": "model error"
+                }
+            }
+        },
+        "example error 2": {
+            "description": "Server error example 2",
+            "value": {
+                "status": "server error",
+                "message": {
+                    "error": "datanase error",
+                    "error_message": "collection not found"
+                }
+            }
+        }
+    }
+}

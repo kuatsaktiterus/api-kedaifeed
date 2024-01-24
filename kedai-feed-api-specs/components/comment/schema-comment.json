@@ -1,0 +1,39 @@
+{
+    "schema-comment": {
+        "type": "object",
+        "properties": {
+            "data": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "id_comment": {
+                            "type": "number",
+                            "format": "int64"
+                        },
+                        "id_post": {
+                            "type": "number",
+                            "format": "int64" 
+                        },
+                        "comment": {
+                            "type": "string"
+                        }   
+                    }
+                }
+            }   
+        }
+    },
+    "schema-create-comment": {
+        "type": "object",
+        "properties": {
+            "id_post": {
+                "type": "number",
+                "format": "int64"
+            },
+            "comment": {
+                "type": "string",
+                "maxLength": 2300
+            }
+        }
+    }
+}

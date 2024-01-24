@@ -1,0 +1,8 @@
+{
+    "apiKey": {
+        "type": "apiKey",
+        "description": "Authentication for API",
+        "in": "header",
+        "name": "X-API-Key"
+    }
+}
